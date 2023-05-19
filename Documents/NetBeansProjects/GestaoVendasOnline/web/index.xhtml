@@ -12,10 +12,6 @@
         
         <p:menubar>
 
-           
-                    
-    
-           
            <p:submenu label="Home" >  </p:submenu>
           
 
@@ -40,6 +36,53 @@
 
         </p:menubar>
    
+        
+        <h1>TSP Services</h1>
+        
+        <h:form id="form">
+
+    <div class="card">
+        <p:carousel value="#{carouselView.products}" var="product" numVisible="3" numScroll="3"
+                    responsiveOptions="#{carouselView.responsiveOptions}">
+            <f:facet name="header">
+                <h5>Basic</h5>
+            </f:facet>
+            <div class="product-item">
+                <div class="product-item-content">
+                    <div class="mb-3">
+                        <p:graphicImage value="resources/imagens/img.jpg"></p:graphicImage>
+                       
+                    </div>
+                    <div>
+                        <h4 class="mb-1">#{product.name}</h4>
+                        <h6 class="mt-0 mb-3">
+                            <h:outputText value="#{product.price}">
+                                <f:convertNumber type="currency" pattern="¤#0" currencySymbol="$" />
+                            </h:outputText>
+                        </h6>
+                        <span class="product-badge status-#{product.inventoryStatus.name().toLowerCase()}">#{product.inventoryStatus.text}</span>
+                        <div class="mt-5">
+                            <p:commandButton type="button" icon="pi pi-search" styleClass="rounded-button mr-2" />
+                            <p:commandButton type="button" icon="pi pi-star" styleClass="ui-button-success rounded-button mr-2" />
+                            <p:commandButton type="button" icon="pi pi-cog" styleClass="ui-button-help rounded-button" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p:carousel>
+    </div>
+
+   
+</h:form>
+        
+        <p> 
+Nossa empresa é especializada na venda de celulares e acessórios. 
+Oferecemos uma ampla variedade de modelos de smartphones das principais marcas do mercado.
+Além disso, disponibilizamos uma variedade de acessórios, como capas, fones de ouvido, carregadores e películas protetoras. <br> </br>
+Nosso objetivo é fornecer produtos de alta qualidade, atendimento excepcional e preços competitivos. 
+Trabalhamos com uma equipe especializada e capacitada para auxiliar nossos clientes na escolha dos melhores dispositivos e acessórios de acordo com suas necessidades. <br> </br>
+Garantimos uma experiência de compra conveniente e segura, com opções de pagamento flexíveis e entrega rápida. 
+Estamos comprometidos em superar as expectativas de nossos clientes e oferecer soluções tecnológicas de ponta. </p>
 
     </h:body>
 </html>
