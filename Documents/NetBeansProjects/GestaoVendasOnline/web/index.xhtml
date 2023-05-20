@@ -39,42 +39,11 @@
         
         <h1>TSP Services</h1>
         
-        <h:form id="form">
-
-    <div class="card">
-        <p:carousel value="#{carouselView.products}" var="product" numVisible="3" numScroll="3"
-                    responsiveOptions="#{carouselView.responsiveOptions}">
-            <f:facet name="header">
-                <h5>Basic</h5>
-            </f:facet>
-            <div class="product-item">
-                <div class="product-item-content">
-                    <div class="mb-3">
-                        <p:graphicImage value="resources/imagens/img.jpg"></p:graphicImage>
-                       
-                    </div>
-                    <div>
-                        <h4 class="mb-1">#{product.name}</h4>
-                        <h6 class="mt-0 mb-3">
-                            <h:outputText value="#{product.price}">
-                                <f:convertNumber type="currency" pattern="¤#0" currencySymbol="$" />
-                            </h:outputText>
-                        </h6>
-                        <span class="product-badge status-#{product.inventoryStatus.name().toLowerCase()}">#{product.inventoryStatus.text}</span>
-                        <div class="mt-5">
-                            <p:commandButton type="button" icon="pi pi-search" styleClass="rounded-button mr-2" />
-                            <p:commandButton type="button" icon="pi pi-star" styleClass="ui-button-success rounded-button mr-2" />
-                            <p:commandButton type="button" icon="pi pi-cog" styleClass="ui-button-help rounded-button" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </p:carousel>
-    </div>
-
-   
-</h:form>
+        <p:graphicImage value="img" library="imagens" name="img.jpg"/><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         
+       <h1>TSP Services</h1>
         <p> 
 Nossa empresa é especializada na venda de celulares e acessórios. 
 Oferecemos uma ampla variedade de modelos de smartphones das principais marcas do mercado.
