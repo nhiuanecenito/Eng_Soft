@@ -1,0 +1,112 @@
+@charset "Utf-8";
+
+body{
+   background-color: darkgray; 
+}
+
+img{
+        max-width:80rem;
+	max-height:40rem;
+	margin-top:40px;
+	position:relative;
+        display: block;
+	margin-left: auto;
+	margin-right: auto;
+       
+}
+p,h2{
+    
+    color: green;
+  
+
+}
+.footer.footer{
+    height: 100x;
+    background: #000;
+    position: relative;
+}
+.footerr{
+    height: 100x;
+    background: #000;
+    position: relative;
+    margin-top: 1500px;
+}
+.contacto{
+   
+    text-align:center;
+}
+.Sobre-nos{
+    
+    text-align:center;
+}
+.card{
+    width: 18rem;
+}
+.img4{
+    max-height: 100px;
+  
+    margin-left: 20px;
+    width: 18rem;
+    position: absolute;
+}
+
+.img5{
+    max-height: 100px;
+    margin-top: 20px;
+    margin-left: 750px;
+    width: 18rem;
+}
+.img05{
+        max-height: 100px;
+    margin-top: 680px;
+    margin-left: 20px;
+    width: 18rem;
+    position: absolute;
+}
+.img8{
+     max-height: 100px;
+    margin-top: 720px;
+    margin-left: 750px;
+    width: 18rem;
+}
+
+.card{
+      
+     width: 25em;
+        margin-top: 20px;
+         position: absolute;
+    }
+    .card2{
+        width: 25em;
+        margin-top: 20px;
+    margin-left: 530px;
+     position: absolute;
+    }
+    
+    .card3{
+      width: 25em;
+        margin-top: 20px;
+    margin-left: 1050px;
+    position: absolute;
+    }
+    
+    .card4{
+           width: 25em;
+        margin-top: 750px;
+ 
+    position: absolute;
+    }
+    
+    .card5{
+           width: 25em;
+        margin-top: 750px;
+    margin-left: 530px;
+    position: absolute;
+    }
+    .card6{
+           width: 25em;
+        margin-top: 750px;
+    margin-left: 1050px;
+     position: absolute;
+  
+    }
