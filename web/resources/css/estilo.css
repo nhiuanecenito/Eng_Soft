@@ -110,3 +110,7 @@ p,h2{
      position: absolute;
   
     }
+    
+    .panel{
+          color: green;
+    }
