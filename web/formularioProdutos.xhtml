@@ -16,26 +16,26 @@
                    <p:panel  header="Preencha os Campos em Branco">
                 <p:panelGrid columns="2">
                     
-                     <p:outputLabel value="Nome do Cliente"/>
-                    <input type="text" name="nome"></input>
+                     <p:outputLabel value="Categoria"/>
+                    <input type="text" name="categoria"></input>
                         
-                     <p:outputLabel value="Email"/>
-                     <input type="text" name="email"></input>
+                     <p:outputLabel value="Descricao"/>
+                     <input type="text" name="descricao"></input>
                     
-                     <p:outputLabel value="Contacto"/>
-                    <input type="text" name="contacto"></input>  
+                     <p:outputLabel value="Marca"/>
+                    <input type="text" name="marca"></input>  
                         
-                    <p:outputLabel value="Provincia que Reside"/>
-                    <input type="text" name="provincia"></input>
+                    <p:outputLabel value="Modelo"/>
+                    <input type="text" name="modelo"></input>
                     
-                    <p:outputLabel value="Bairro"/>
-                    <input type="text" name="bairro"></input>
+                    <p:outputLabel value="Preco"/>
+                    <input type="text" name="preco"></input>
                     
                 
                 </p:panelGrid>
                 
                 <p:growl id='growl' life="1000"/><br></br>
-                <p:commandButton action="inserirCliente.jsp" value="Enviar" update="growl"/>
+                <p:commandButton action="inserirProduto.jsp" value="Enviar" update="growl"/>
             </p:panel>
             
         </h:form>

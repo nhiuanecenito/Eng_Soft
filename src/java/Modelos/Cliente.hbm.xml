@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/mai/2023 11:29:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelos.Cliente" table="cliente" catalog="gestao_vendas_online" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="string">
+            <column name="Nome" length="50" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="200" not-null="true" />
+        </property>
+        <property name="contacto" type="string">
+            <column name="Contacto" length="40" not-null="true" />
+        </property>
+        <property name="proivincia" type="string">
+            <column name="Proivincia" length="50" not-null="true" />
+        </property>
+        <property name="bairro" type="string">
+            <column name="Bairro" length="50" not-null="true" />
+        </property>
+        <set name="pedidoses" table="pedidos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_cliente" not-null="true" unique="true" />
+            </key>
+            <one-to-many class="Modelos.Pedidos" />
+        </set>
+    </class>
+</hibernate-mapping>

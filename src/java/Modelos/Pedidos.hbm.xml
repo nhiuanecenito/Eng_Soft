@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/mai/2023 11:29:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelos.Pedidos" table="pedidos" catalog="gestao_vendas_online" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="cliente" class="Modelos.Cliente" fetch="select">
+            <column name="ID_cliente" not-null="true" unique="true" />
+        </many-to-one>
+        <many-to-one name="produtos" class="Modelos.Produtos" fetch="select">
+            <column name="Itens_do_pedido" not-null="true" />
+        </many-to-one>
+        <property name="dataDoPedido" type="date">
+            <column name="Data_do_pedido" length="10" not-null="true" />
+        </property>
+        <property name="statusPedido" type="string">
+            <column name="Status_pedido" length="50" not-null="true" />
+        </property>
+        <property name="metodoDePagamento" type="string">
+            <column name="Metodo_de_pagamento" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

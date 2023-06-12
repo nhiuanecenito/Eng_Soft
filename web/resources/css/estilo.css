@@ -3,6 +3,15 @@
 body{
    background-color: darkgray; 
 }
+.formulario{
+            text-align: center;
+            margin: 0 auto;
+           width:50%;
+           height: 400px;
+            background-image: url("../resources/imagens/login.jpeg");
+            color: white;
+        }
+        
 
 img{
         max-width:80rem;
